@@ -91,7 +91,7 @@ I'm using IBM Cloud Function to expose my model deployed on IBM cloud and that c
   - scoring_endpoint - Scoring URL for your deployed model on IBM Cloud
 
   ## References
-    * [IBM Watson Studio](https://console.bluemix.net/catalog/services/watson-studio) - Watson Studio provides a suite of tools and a collaborative environment for data scientists, developers and domain experts.
-    * [Watson Machine Learning Client](https://wml-api-pyclient.mybluemix.net/) - IBM Watson Machine Learning Client REST API documentation
-    * [IBM Cloud Object Storage](https://console.bluemix.net/docs/services/cloud-object-storage/libraries/python.html#using-python) - Python SDK for IBM Cloud Object storage
-    * [IBM Cloud Functions](https://console.bluemix.net/openwhisk/) - IBM Cloud Functions (based on Apache OpenWhisk) is a Function-as-a-Service (FaaS) platform which executes functions in response to incoming events and costs nothing when not in use.
+  * [IBM Watson Studio](https://console.bluemix.net/catalog/services/watson-studio) - Watson Studio provides a suite of tools and a collaborative environment for data scientists, developers and domain experts.
+  * [Watson Machine Learning Client](https://wml-api-pyclient.mybluemix.net/) - IBM Watson Machine Learning Client REST API documentation
+  * [IBM Cloud Object Storage](https://console.bluemix.net/docs/services/cloud-object-storage/libraries/python.html#using-python) - Python SDK for IBM Cloud Object storage
+  * [IBM Cloud Functions](https://console.bluemix.net/openwhisk/) - IBM Cloud Functions (based on Apache OpenWhisk) is a Function-as-a-Service (FaaS) platform which executes functions in response to incoming events and costs nothing when not in use.
