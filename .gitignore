@@ -1,0 +1,7 @@
+data
+results
+.zip
+config.json
+details.json
+.ipynb_*
+__pycache__
