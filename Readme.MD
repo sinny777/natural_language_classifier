@@ -49,13 +49,13 @@ This repository can be used as a reference to creating ML or Deep learning model
 ```
 
 ## Requirements to run locally
-Step 1: Make sure you have following dependencies:
+**Step 1:** Make sure you have following dependencies:
   - Python (I prefer to use Anaconda for installation)
   - Tensorflow >= 1.5.0
   - Keras
   - Scikit Learn
 
-Step 2: Create "data" folder and put "data.csv" inside it.  This file should have following format:
+**Step 2:** Create "data" folder and put "data.csv" inside it.  This file should have following format:
 ```sh
 utterances,intent
 Tell me something about yourself,about_me
@@ -63,7 +63,7 @@ Tell me something about you ?,about_me
 Tell me about yourself ?,about_me
 Who are you ?,about_me
 ```
-Note: More the examples of Utterances and their corresponding Intent, better the accuracy of your NLC model.
+**Note:** More the examples of Utterances and their corresponding Intent, better the accuracy of your NLC model.
 
 ## Create Model locally
 To create and train model locally, run the following command:
