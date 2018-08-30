@@ -81,3 +81,17 @@ Once you are good with basic testing of your model locally, you may want to crea
   ```sh
   python Deployment.py --data_dir data --result_dir results --config_file model_config.json --data_file data.csv
   ```
+
+## IBM Cloud Function
+I'm using IBM Cloud Function to expose my model deployed on IBM cloud and that can be used as REST endpoint.  Using this Cloud function, the consumer of my model can directly send the request in raw format (in this case, text to be classified) and all pre-processing of data before we can provide it to our model is done in this "action" method.  You can copy the content of this function from "cloud_function/classify.py" and create an action on your IBM Cloud function.  Make sure you add following parameters as well:
+
+  - cos_credentials - Your Cloud Object Storage Credentials
+  - wml_credentials - Watson Machine Learning Credentials
+  - data_bucket - COS bucket name where data file is present
+  - scoring_endpoint - Scoring URL for your deployed model on IBM Cloud
+
+  ## References
+    * [IBM Watson Studio](https://console.bluemix.net/catalog/services/watson-studio) - Watson Studio provides a suite of tools and a collaborative environment for data scientists, developers and domain experts.
+    * [Watson Machine Learning Client](https://wml-api-pyclient.mybluemix.net/) - IBM Watson Machine Learning Client REST API documentation
+    * [IBM Cloud Object Storage](https://console.bluemix.net/docs/services/cloud-object-storage/libraries/python.html#using-python) - Python SDK for IBM Cloud Object storage
+    * [IBM Cloud Functions](https://console.bluemix.net/openwhisk/) - IBM Cloud Functions (based on Apache OpenWhisk) is a Function-as-a-Service (FaaS) platform which executes functions in response to incoming events and costs nothing when not in use.
